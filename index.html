@@ -1,78 +1,225 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Andromeda4LITA</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Andromeda Yelton's campaign page for the 2013 LITA Board of Directors election">
+        <meta name="author" content="Andromeda Yelton">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+        <!--
+        exclude, see what breaks, and put in local.less as needed
+        <link href="bootstrap/css/docs.css" rel="stylesheet" media="screen">
+        -->
 
-    <title>Miniature-octo-dangerzone by thatandromeda</title>
-  </head>
+        <!-- 
+            To do:
+            make sure I've used only needed css and js
+                including bootstrap.less includes
+                and variables.less
+            test interface on actual mobile devices - link appearance & functionality, e.g. (touchscreen)
+            do I want a footer? (left docs.css footer stuff in local.less just in case)
+            what's the share-button plan?
+            don't forget call to action!
+        -->
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans|Ubuntu|Enriqueta:700' rel='stylesheet' type='text/css'>
+        
+    </head>
+    
+    <body>
+        <!--
+            To do:
+            multicolumn row layout(s)
+            
+            content design...
+            andromedayelton.com navigation?
+            
+            test on multiple devices/browser sizes
+            feedback
+            
+            make sure video styling works
+        -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <div class="container">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class="">
+                    <a href="#meetAndromeda">Meet Andromeda</a>
+                  </li>
+                  <li class="">
+                    <a href="#vision">Vision</a>
+                  </li>
+                  <li class="">
+                    <a href="#resume">Resume</a>
+                  </li>
+                  <li class="">
+                    <a href="#endorsements">Endorsements</a>
+                  </li>
+                </ul>
+                <a class="brand" href="http://andromedayelton.com">andromedayelton.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <header class="jumbotron subhead">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    <div class="headshot span2">
+                        <img src="bootstrap/img/andromeda.jpg">
+                    </div>
+                    <div class="span1">
+                    </div>
+                    <div class="span9">
+                        <h1>Andromeda4LITA</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span1">
+                </div>
+                <div class="span10">
+                    <section id="meetAndromeda">
+                        <h2>Meet Andromeda</h2>
+                        <div class="videoWrapper">
+                            <iframe src="http://player.vimeo.com/video/39352026?badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/39352026">Computers in Libraries 2012: The Future of Ebooks</a> from <a href="http://vimeo.com/shanachietour">Jaap van de Geer</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+                        </div>                        
+                    </section>
+                    
+                    <hr class="soften">
+                    
+                    <section id="vision">
+                        <h2>Vision</h2>
+                        <p>Cras rutrum sapien sit amet dui adipiscing hendrerit. Morbi risus ipsum, hendrerit quis eleifend ac, consequat vitae ligula. Ut nisl lacus, eleifend at mattis ut, laoreet nec mauris. Vestibulum vestibulum lorem ligula, vitae semper turpis. Etiam nec massa in quam tempus blandit. Pellentesque aliquet odio in eros convallis auctor. Nulla vel volutpat ligula. Fusce venenatis hendrerit mauris. Mauris vitae libero eros. Nulla ante purus, vehicula id pellentesque tempus, faucibus eu massa. Nam eget dolor eu massa fringilla feugiat.</p>
 
-  <body>
-    <header>
-      <div class="inner">
-        <h1>Miniature-octo-dangerzone</h1>
-        <h2>seekrit project</h2>
-        <a href="https://github.com/thatandromeda/miniature-octo-dangerzone" class="button"><small>View project on</small>GitHub</a>
-      </div>
-    </header>
-
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/thatandromeda/miniature-octo-dangerzone/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/thatandromeda/miniature-octo-dangerzone/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/thatandromeda/miniature-octo-dangerzone"></a> is maintained by <a href="https://github.com/thatandromeda">thatandromeda</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
-
-  
-  </body>
+                        <p>Nulla convallis mauris at ante hendrerit euismod varius nec urna. Fusce cursus mauris nec dui feugiat pharetra. Duis odio ipsum, tempus non hendrerit ac, malesuada nec nunc. Donec feugiat suscipit dolor, id molestie orci varius a. Duis molestie commodo mauris vestibulum vehicula. Mauris a odio vitae quam consequat tempus. Curabitur fermentum arcu id felis tincidunt ac tempor tellus auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                    </section>
+                    
+                    <hr class="soften">
+                    
+                    <section id="resume">
+                        <h2>Resume</h2>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <h4>Work Experience</h4>
+                                <p>Member of Founding Team, <a href="https://unglue.it">Unglue.it</a>, 2011-</p>
+                                <p>Library Consultant, <a href="http://www.fessenden.org">The Fessenden School</a>, 2010-2011</p>
+                                <p>Library Intern, <a href="http://seyfarth.com/">Seyfarth Shaw LLP</a>, 2010-2011</p>
+                                <p>Latin Teacher, <a href="http://www.fessenden.org">The Fessenden School</a>, 2003-2008</p>
+                                <p>Scheduler, <a href="http://www.fessenden.org">The Fessenden School</a>, 2006-2008; 2011</p>
+                            </div>
+                            <div class="span6">
+                                <h4>Awards & Honors</h4>
+                                <p>ALA Class of 2011 Emerging Leader</p>
+                                <p>2010 LITA/Ex Libris Student Writing Award</p>
+                                <p>2010 ACRL/NEC Annual Conference Scholarship for Library School Students</p>
+                                <p>Listener contestant on <a href="http://www.npr.org/templates/story/story.php?storyId=121366629">Wait Wait, Don't Tell Me</a>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <h4>ALA Involvement</h4>
+                                <p>LITA National Forum 2013 Planning Committee, 2012-</p>
+                                <p>LITA/ALCTS Library Code Year Interest Group, cofounder & cochair, 2012-</p>
+                                <p>LITA / Ex Libris Student Writing Award Committee, 2011-2012</p>
+                            </div>
+                            <div class="span6">
+                                <h4>Degrees</h4>
+                                <p>MS in Library and Information Science, Simmons College</p>
+                                <p>MA in Classics, Tufts University</p>
+                                <p>BS in Mathematics, Harvey Mudd College</p>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span6">
+                                <h4>Selected Publications & Presentations</h4>
+                                <p><a href="http://www.thedigitalshift.com/2012/07/ebooks/ebooks-choices-and-the-soul-of-librarianship/">“Ebooks Choices and the Soul of Librarianship”</a>. <I>Library Journal</i>’s Digital Shift, July 30, 2012.</p>
+                                <p>“The Future of Ebooks” (panel), Computers in Libraries, March 23, 2012. (<a href="http://vimeo.com/39352026">video</a>)</p>
+                                <p>“Battledecks”, Computers in Libraries, March 22, 2012; winner.</p>
+                                <p><a href="http://www.alatechsource.org/taxonomy/term/106/bridging-the-digital-divide-with-mobile-services"><i>Bridging the Digital Divide with Mobile Services</i></a>. ALA TechSource, January 2012.</p>
+                                <p>“Real-Life Strategies for Successful Library Job Hunting”, ALA Editions webinar with Tiffany Mair. (<a href="http://alaeditions.org/blog/198/continuing-conversation-real-life-strategies-successful-library-job-hunting">recap and archive</a>)</p>
+                                <p>“Talk About: Publishers, Distributors & the Future of Ebooks” (panel discussion), Internet Librarian, October 19, 2011.</p>
+                                <p>“There is no spoon” (invited keynote), ACPL Library Camp, September 16, 2011. (<a href="https://docs.google.com/present/edit?id=0AXdilCNIaDr8ZDJwNWpxa18xODhmY2h4ZGZkeA&hl=en_US">slides</a>)</p>
+                                <p><a href="http://alatechsource.org/taxonomy/term/106/librarians-assessments-of-automation-systems-survey-results-2007-2010"><i>Librarians’ Perceptions of Automation Systems: Survey Results 2007-2010.</i></a> Marshall Breeding and Andromeda Yelton. ALA TechSource, May/June 2011.</p>
+                                <p>“How to Build Five Libraries in One Month,” TEDxPrincetonLibrary, June 1, 2011. (<a href="http://tedxtalks.ted.com/video/TEDxPrincetonlibrary-Andromeda;search:andromeda">watch it on tedxtalks.ted.com</a>)</p>
+                                <p>“A Simple Scheme for Book Classification Using Wikipedia.” Information Technology and Libraries, 30(1), March 2011. (<a href="http://www.ala.org/lita/ital/sites/ala.org.lita.ital/files/content/30/1/pdf/yelton.pdf">[pdf]</a>)</p>
+                                <p>“Personal Branding for New Librarians” (panel), ALA Midwinter Conference, January 8, 2011.</p>
+                            </div>
+                            <div class="span6">
+                                <h4>Code</h4>
+                                <p>Front end, and occasional back end, work on <a href="https://unglue.it">Unglue.it</a> -- Python, Django, JQuery, CSS</p> 
+                                <p>@fixit, a #code4lib irc zoia plugin written in Python (<a href="http://andromedayelton.com/blog/2012/06/09/i-wrote-a-plugin-for-zoia-in-code4lib-irc-heres-how/">documentation</a>, <a href="https://github.com/code4lib/supybot-plugins/tree/master/plugins/Fixit">github</a>)</p>
+                                <p><a href="http://andromedayelton.com/projects/libday8-visualizer/">#libday8 visualizer</a>, a high-level, realtime, visually oriented overview of Library Day in the Life, Round 8 (<a href="http://andromedayelton.com/blog/2012/01/29/libday8-visualizer/">documentation</a>)</p>
+                                <p><a href="http://twitter.com/jaguarbot">@jaguarbot</a>, a Twitter bot based on my 2011 <a href="http://jaguars.andromedayelton.com">Emerging Leader project</a>, written in Python (<a href="http://andromedayelton.com/blog/2012/01/13/how-i-wrote-jaguarbot-a-manifesto/">manifesto</a>, <a href="https://github.com/thatandromeda/Jaguarbot">github</a>)</p>
+                                <p><a href="http://jaguars.andromedayelton.com/">Jaguar ALA Timeline</a>, a visual guide to what happens, when, in ALA; 2011 ALA Emerging Leaders Team Jaguar project (I did the Drupal part).</p>
+                                <p><a href="http://andromedayelton.com/dckx.php">DCKX</a>, the Directory of Curricular Knowledge in XKCD, a subject index in PHP, SQL, HTML, and CSS</p>
+                            </div>
+                        </div>
+                    </section>
+                    
+                    <hr class="soften">
+                    
+                    <section id="endorsements">
+                        <h2>Endorsements</h2>
+                        <div class="row-fluid">
+                            <div class="span1 headshot">
+                                <img src="images/headshots/aaron.jpg">
+                            </div>
+                            <div class="span5 well">
+                                Andromeda is wicked smart, hilariously insightful, and scary effective. I met her when I was the member-mentor for the 2011 ALA Emerging Leaders Team J project "ALA Timeline" which presents a graphical display of various ALA events, deadlines, and publications. Andromeda coded up the back-end of the display in Drupal at <a href="http://jaguars.andromedayelton.com">http://jaguars.andromedayelton.com</a>. She has been an active observer and participant in LITA Board meetings for several years, has the organizational skills needed to make the ideas and desires expressed there happen, and will be one of the most effective LITAns for years to come.
+                                <div class="acknowledgerLead">
+                                Aaron Dobbs
+                                </div>
+                                <div class="acknowledgerSub">
+                                Systems Librarian and Assistant Professor, University of Pennsylvania, Shippensburg<br/>
+                                LITA Board of Directors, 2009-2012
+                                </div>
+                            </div>
+                            <div class="span1 headshot">
+                                <img src="images/headshots/marshall.jpg">
+                            </div>
+                            <div class="span5 well">
+                                I enthusiastically endorse Andromeda Yelton as a candidate for the LITA Board of Directors.  As a collaborator on research and writing projects, Andromeda demonstrated keen analytical and communications skills as well as perseverance to keep the project on track.  In the broader profession, she has been on the forefront of confronting some of the key issues that challenge libraries, as exemplified by her work for <a href="https://unglue.it">Unglue.it</a> to create an alternative business model for publishing.
+                                <div class="acknowledgerLead">
+                                Marshall Breeding
+                                </div>
+                                <div class="acknowledgerSub">
+                                Independent Consultant
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="span1">
+                </div>
+            </div>
+        </div>
+        
+        <!-- make sure to include credits:
+            color theme: http://design-seeds.com/index.php/home/entry/flora-light
+            also tried:
+            http://design-seeds.com/index.php/home/entry/yarn-vintage
+            possibly consider:
+            http://design-seeds.com/index.php/home/entry/coffee-hues
+            
+            twitter bootstrap: booyah
+            github pages: also booyah
+            
+            http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
+            jason griffey for typography help
+        -->
+        
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+    </body>
 </html>
