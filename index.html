@@ -41,6 +41,17 @@
             
             make sure video styling works
         -->
+        <!-- needed for like button -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
         <div class="navbar navbar-inverse navbar-fixed-top">
           <div class="navbar-inner">
             <div class="container">
@@ -62,6 +73,31 @@
                   </li>
                   <li class="">
                     <a href="#endorsements">Endorsements</a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle">Share</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="https://twitter.com/share" class="twitter-share-button" data-via="ThatAndromeda" data-hashtags="andromeda4lita" data-dnt="true">Tweet</a>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                        </li>
+                        <li>
+                            <div class="fb-like" data-href="http://thatandromeda.github.com/lita" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+                        </li>
+                        <li>
+                            <div class="g-plusone" data-href="http://thatandromeda.github.com/lita"></div>
+                            <script type="text/javascript">
+                              (function() {
+                                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                                po.src = 'https://apis.google.com/js/plusone.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+                              })();
+                            </script>
+                        </li>
+                        <li>
+                            <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fthatandromeda.github.com%2Flita&media=https%3A%2F%2Fgithub.com%2Fthatandromeda%2Fappfest%2Fblob%2Fgh-pages%2Fbootstrap%2Fimg%2Fandromeda.jpg&description=Andromeda4LITA%3A%20Vote%20Andromeda%20for%20LITA%20Board" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+                        </li>
+                    </ul>
                   </li>
                 </ul>
                 <a class="brand" href="http://andromedayelton.com">andromedayelton.com</a>
@@ -221,5 +257,6 @@
         
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
     </body>
 </html>
