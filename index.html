@@ -21,8 +21,9 @@
                 and variables.less
             test interface on actual mobile devices - link appearance & functionality, e.g. (touchscreen)
             do I want a footer? (left docs.css footer stuff in local.less just in case)
-            what's the share-button plan?
             don't forget call to action!
+            publicly publish endorsements page & make sure it works
+            test appearance of sharing functions when properly online & ask people to test them out for you (esp tumblr)
         -->
         <link href='http://fonts.googleapis.com/css?family=PT+Sans|Ubuntu|Enriqueta:700' rel='stylesheet' type='text/css'>
         
@@ -95,7 +96,10 @@
                             </script>
                         </li>
                         <li>
-                            <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fthatandromeda.github.com%2Flita&media=https%3A%2F%2Fgithub.com%2Fthatandromeda%2Fappfest%2Fblob%2Fgh-pages%2Fbootstrap%2Fimg%2Fandromeda.jpg&description=Andromeda4LITA%3A%20Vote%20Andromeda%20for%20LITA%20Board" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+                            <a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fthatandromeda.github.com%2Flita&media=https%3A%2F%2Fgithub.com%2Fthatandromeda%2Flita%2Fblob%2Fgh-pages%2Fbootstrap%2Fimg%2Fandromeda.jpg&description=Andromeda4LITA%3A%20Vote%20Andromeda%20for%20LITA%20Board" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+                        </li>
+                        <li>
+                            <span id="tumblr_button_abc123"></span>
                         </li>
                     </ul>
                   </li>
@@ -127,6 +131,7 @@
                 <div class="span10">
                     <section id="meetAndromeda">
                         <h2>Meet Andromeda</h2>
+                        <p>Hi!  I'm Andromeda Yelton, and I'm running for <a href="http://www.ala.org/lita/about/board">LITA Board of Directors</a>, as a Director at Large for 2013-2016.  The election will take place in the spring of 2013 via email.  I would really appreciate your vote.</p>
                         <div class="videoWrapper">
                             <iframe src="http://player.vimeo.com/video/39352026?badge=0" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/39352026">Computers in Libraries 2012: The Future of Ebooks</a> from <a href="http://vimeo.com/shanachietour">Jaap van de Geer</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
                         </div>                        
@@ -208,6 +213,11 @@
                     <section id="endorsements">
                         <h2>Endorsements</h2>
                         <div class="row-fluid">
+                            <div class="span12">
+                                I'm incredibly grateful and honored that these fine people have endorsed me.  If you'd like, you can <a href="http://andromedayelton.com/endorsements/">endorse me too</a>.
+                            </div>
+                        </div>
+                        <div class="row-fluid">
                             <div class="span1 headshot">
                                 <img src="images/headshots/aaron.jpg">
                             </div>
@@ -241,22 +251,52 @@
             </div>
         </div>
         
-        <!-- make sure to include credits:
-            color theme: http://design-seeds.com/index.php/home/entry/flora-light
-            also tried:
-            http://design-seeds.com/index.php/home/entry/yarn-vintage
-            possibly consider:
-            http://design-seeds.com/index.php/home/entry/coffee-hues
-            
-            twitter bootstrap: booyah
-            github pages: also booyah
-            
-            http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/
-            jason griffey for typography help
-        -->
+        <footer class="footer">
+            <div class="container">
+                <p class="pull-right"><a href="#">Back to top</a>
+                <div>
+                    <p>Designed and built by <a href="http://andromedayelton.com">Andromeda Yelton</a>.  I'm not a web designer at all; I got to stand on the shoulders of a whole lot of giants.  Thanks go to...</p>
+                    <ul>
+                        <li>
+                            <a href="http://twitter.com/mdo">@mdo</a> and <a href="http://twitter.com/fat">@fat</a>, for building the ridiculously awesome <a href="http://twitter.github.com/bootstrap/">Bootstrap</a> framework;
+                        </li>
+                        <li>
+                            <a href="http://pages.github.com/">github:pages</a>, for dead simple web hosting;
+                        </li>
+                        <li>
+                            { design seeds }, for the <a href="http://design-seeds.com/index.php/home/entry/flora-light">color scheme</a>;
+                        </li>
+                        <li>
+                            A List Apart, for help with <a href="http://www.alistapart.com/articles/creating-intrinsic-ratios-for-video/">gracefully resizing media</a>, plus (via <a href="http://ethanmarcotte.com/">Ethan Marcotte</a>) the whole idea of <a href="http://www.alistapart.com/articles/responsive-web-design/">responsive design</a> in the first place;
+                        </li>
+                        <li>
+                            <a href="http://jasongriffey.net/">Jason Griffey</a> for pretty typography ideas, and <a href="http://www.google.com/webfonts">Google Web Fonts</a> for letting me implement them;
+                        </li>
+                        <li>
+                            and <a href="http://www.photoclave.com/blog/">Molly Tomlinson</a>, for the headshot of me.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
         
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="bootstrap/js/bootstrap.min.js"></script>
+        
+        <!-- o hai sharing -->
         <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+        <script type="text/javascript">
+            var tumblr_photo_source = "https://github.com/thatandromeda/lita/blob/gh-pages/bootstrap/img/andromeda.jpg";
+            var tumblr_photo_caption = "Andromeda4LITA: Vote Andromeda for LITA Board";
+            var tumblr_photo_click_thru = "http://thatandromeda.github.com/lita";
+        </script>
+        <script type="text/javascript">
+            var tumblr_button = document.createElement("a");
+            tumblr_button.setAttribute("href", "http://www.tumblr.com/share/photo?source=" + encodeURIComponent(tumblr_photo_source) + "&caption=" + encodeURIComponent(tumblr_photo_caption) + "&clickthru=" + encodeURIComponent(tumblr_photo_click_thru));
+            tumblr_button.setAttribute("title", "Share on Tumblr");
+            tumblr_button.setAttribute("style", "display:inline-block; text-indent:-9999px; overflow:hidden; width:81px; height:20px; background:url('http://platform.tumblr.com/v1/share_1.png') top left no-repeat transparent;");
+            tumblr_button.innerHTML = "Share on Tumblr";
+            document.getElementById("tumblr_button_abc123").appendChild(tumblr_button);
+        </script>
     </body>
 </html>
