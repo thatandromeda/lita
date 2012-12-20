@@ -3174,6 +3174,12 @@ h2 {
   font-style: italic;
   line-height: 18.75px;
 }
+#vision div.span9 {
+  margin: 12.5px inherit;
+}
+#vision div.span3 {
+  padding-right: 1%;
+}
 /* Footer
 -------------------------------------------------- */
 .footer {
